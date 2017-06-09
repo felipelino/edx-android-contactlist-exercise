@@ -1,3 +1,32 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Gist
+ @felipelino
+ Sign out
+ Unwatch 0
+  Star 0
+  Fork 0 felipelino/edx-android-contactlist-exercise
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Settings Insights 
+Branch: master Find file Copy pathedx-android-contactlist-exercise/.gitignore
+3c9a123  3 minutes ago
+@felipelino felipelino Initial commit
+1 contributor
+RawBlameHistory    
+56 lines (41 sloc)  760 Bytes
 # Built application files
 *.apk
 *.ap_
@@ -53,3 +82,6 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
+

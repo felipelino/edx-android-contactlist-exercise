@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.beginner.micromaster.contactlist.DetailActivity">
+
+    <TextView
+        android:id="@+id/contactName"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="13dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/gallery_thumb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/contactLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/contactName"
+        android:layout_alignStart="@+id/contactName"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/lbEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="39dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/lbPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbEmail"
+        android:layout_alignStart="@+id/lbEmail"
+        android:layout_below="@+id/lbEmail"
+        android:layout_marginTop="25dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbPhone"
+        android:layout_alignLeft="@+id/contactLastName"
+        android:layout_alignStart="@+id/contactLastName"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbPhone"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_alignTop="@+id/lbPhone"
+        android:text="TextView" />
+
+</RelativeLayout>
