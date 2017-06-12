@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
+                Log.d(TAG, "Onclick - create contact pressed.");
                 String name = nameEditText.getText().toString();
                 String lastName = lastNameEditText.getText().toString();
                 String email = emailEditText.getText().toString();
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void createNewContact(String name, String lastName, String email, Integer phoneNumber) {
+        Log.d(TAG, "New contact received:");
         Contact contact = new Contact(name, lastName, email, phoneNumber);
         Log.d(TAG, "New contact created: " + contact.toString());
         clearEditText();

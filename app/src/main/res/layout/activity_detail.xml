@@ -40,48 +40,45 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView"
         android:layout_alignLeft="@+id/contactName"
-        android:layout_alignStart="@+id/contactName"
-        android:text="TextView" />
+        android:layout_alignStart="@+id/contactName" />
 
     <TextView
         android:id="@+id/lbEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
+        android:layout_marginTop="40dp"
+        android:text="@string/lb_email"
         android:layout_below="@+id/imageView"
-        android:layout_marginTop="39dp"
-        android:text="TextView" />
+        android:layout_alignLeft="@+id/lbPhone"
+        android:layout_alignStart="@+id/lbPhone" />
 
     <TextView
         android:id="@+id/lbPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lbEmail"
-        android:layout_alignStart="@+id/lbEmail"
+        android:layout_marginTop="41dp"
+        android:text="@string/lb_phone_number"
         android:layout_below="@+id/lbEmail"
-        android:layout_marginTop="25dp"
-        android:text="TextView" />
+        android:layout_toLeftOf="@+id/contactEmail"
+        android:layout_toStartOf="@+id/contactEmail" />
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/contactEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/lbPhone"
         android:layout_alignLeft="@+id/contactLastName"
         android:layout_alignStart="@+id/contactLastName"
         android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp"
-        android:text="TextView" />
+        android:layout_marginStart="14dp" />
 
     <TextView
-        android:id="@+id/phoneNumber"
+        android:id="@+id/contactPhoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/lbPhone"
-        android:layout_alignLeft="@+id/email"
-        android:layout_alignStart="@+id/email"
-        android:layout_alignTop="@+id/lbPhone"
-        android:text="TextView" />
+        android:layout_alignLeft="@+id/contactEmail"
+        android:layout_alignStart="@+id/contactEmail"
+        android:layout_alignTop="@+id/lbPhone" />
 
 </RelativeLayout>

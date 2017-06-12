@@ -24,4 +24,20 @@ public class Contact implements Serializable {
             "phoneNumber:" + phoneNumber;
 
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
 }
