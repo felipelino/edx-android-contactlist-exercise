@@ -11,9 +11,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.beginner.micromaster.contactlist.DetailActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/account" />
+
     <TextView
         android:id="@+id/contactName"
-        android:text="TextView"
+        android:textStyle="bold"
+        android:hint="@string/hint_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="31dp"
@@ -23,24 +37,15 @@
         android:layout_toEndOf="@+id/imageView"
         android:layout_marginTop="13dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/gallery_thumb"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp" />
-
     <TextView
         android:id="@+id/contactLastName"
+        android:textStyle="bold"
+        android:hint="@string/hint_last_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignLeft="@+id/contactName"
-        android:layout_alignStart="@+id/contactName" />
+        android:layout_below="@+id/contactName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
 
     <TextView
         android:id="@+id/lbEmail"
@@ -64,6 +69,7 @@
 
     <TextView
         android:id="@+id/contactEmail"
+        android:hint="@string/hint_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/lbPhone"
@@ -74,6 +80,7 @@
 
     <TextView
         android:id="@+id/contactPhoneNumber"
+        android:hint="@string/hint_phone_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/lbPhone"
